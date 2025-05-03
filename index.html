@@ -13,13 +13,13 @@
         <div class="container">
             <form>
                 <label for="name">Name:</label>
-                <input type="text" id="name"></input>
+                <input type="text" id="name" placeholder="John Doe" required></input>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email"></input>
+                <input type="email" id="email" placeholder="example@domain.com" required></input>
 
                 <label for="position">Positions:</label>
-                <select id="position">
+                <select id="position" required>
                     <option>Job 1</option>
                     <option>Job 2</option>
                     <option>Job 3</option>
@@ -28,7 +28,7 @@
                 <fieldset class="radio-group">
                     <legend>Availability</legend>
 
-                    <input id="full-time" name="availability" type="radio"></input>
+                    <input id="full-time" name="availability" type="radio" checked required></input>
                     <label for="full-time">Full-Time</label>
 
                     <input id="part-time" name="availability" type="radio"></input>
@@ -36,7 +36,7 @@
                     
                 </fieldset>
 
-                <textarea id="message"></textarea>
+                <textarea id="message" placeholder="Why you want to join our company?"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
