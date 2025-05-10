@@ -3,12 +3,16 @@ body {
     color: #E0E0E0;
     justify-content: center;
     display: flex;
+    margin: 15px;
 }
 
 .container {
     margin: 0 auto 0;
     display: flex;
     justify-content: center;
+    background-color: #2C2C2C;
+    border-radius: 3px;
+    padding: 1em;
 }
   
 input:focus, textarea:focus {
