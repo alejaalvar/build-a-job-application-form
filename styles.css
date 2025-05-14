@@ -1,18 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: #121212;
     color: #E0E0E0;
-    justify-content: center;
-    display: flex;
+    display: grid;
+    place-items: center;
     margin: 15px;
 }
 
 .container {
-    margin: 0 auto 0;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-content: center;
     background-color: #2C2C2C;
     border-radius: 3px;
-    padding: 1em;
+    padding: 3em;
 }
   
 input:focus, textarea:focus {
@@ -32,13 +36,13 @@ button:hover {
 }
   
 .radio-group input[type="radio"]:checked {
-    border-color: #BB86FC;
-    background-color: #BB86FC;
+    border-color: #03DAC6;
+    background-color: #03DAC6;
     box-shadow: inset 0 0 0 4px white;
 }
   
 input[type="radio"]:checked + label {
-    color: #BB86FC;
+    color: #03DAC6;
 }
   
 input:first-of-type {
