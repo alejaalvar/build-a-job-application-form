@@ -11,12 +11,17 @@ body {
     margin: 15px;
 }
 
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    white-space: nowrap;
+}
+
 .container {
     display: grid;
     place-content: center;
     background-color: #2C2C2C;
-    border-radius: 3px;
-    padding: 3em;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 .radio-group {
@@ -25,8 +30,15 @@ body {
     margin-top: 15px;
 }
 
-input, select, textarea { 
+button {
     width: 100%;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+}
+
+input, select, textarea, fieldset { 
+    width: 100%;
+    box-sizing: border-box;
 }
   
 input:focus, textarea:focus {
@@ -42,7 +54,11 @@ input:valid, select:valid, textarea:valid {
 }
   
 button:hover {
-    background-color: #03DAC6;
+    background-color: #898686;
+}
+
+button:active {
+    background-color: orange;
 }
   
 .radio-group input[type="radio"]:checked {
